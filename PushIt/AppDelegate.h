@@ -11,5 +11,9 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet NSComboBox* urlComboBox;
+
+- (IBAction)addURL:(id)sender;
+- (IBAction)openURL:(id)sender;
 
 @end

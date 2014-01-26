@@ -14,10 +14,7 @@
 		C0DC2BCF18955B8B00F5D6B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DC2BCE18955B8B00F5D6B4 /* AppDelegate.m */; };
 		C0DC2BD218955B8B00F5D6B4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0DC2BD018955B8B00F5D6B4 /* MainMenu.xib */; };
 		C0DC2BD418955B8B00F5D6B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DC2BD318955B8B00F5D6B4 /* Images.xcassets */; };
-		C0DC2BDB18955B8B00F5D6B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DC2BDA18955B8B00F5D6B4 /* XCTest.framework */; };
 		C0DC2BDC18955B8B00F5D6B4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DC2BBB18955B8A00F5D6B4 /* Cocoa.framework */; };
-		C0DC2BE418955B8B00F5D6B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0DC2BE218955B8B00F5D6B4 /* InfoPlist.strings */; };
-		C0DC2BE618955B8B00F5D6B4 /* PushItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DC2BE518955B8B00F5D6B4 /* PushItTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +43,6 @@
 		C0DC2BD118955B8B00F5D6B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C0DC2BD318955B8B00F5D6B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0DC2BD918955B8B00F5D6B4 /* PushItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0DC2BDA18955B8B00F5D6B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C0DC2BE118955B8B00F5D6B4 /* PushItTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PushItTests-Info.plist"; sourceTree = "<group>"; };
-		C0DC2BE318955B8B00F5D6B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C0DC2BE518955B8B00F5D6B4 /* PushItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushItTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +59,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0DC2BDC18955B8B00F5D6B4 /* Cocoa.framework in Frameworks */,
-				C0DC2BDB18955B8B00F5D6B4 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				C0DC2BC118955B8A00F5D6B4 /* PushIt */,
-				C0DC2BDF18955B8B00F5D6B4 /* PushItTests */,
 				C0DC2BBA18955B8A00F5D6B4 /* Frameworks */,
 				C0DC2BB918955B8A00F5D6B4 /* Products */,
 			);
@@ -96,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				C0DC2BBB18955B8A00F5D6B4 /* Cocoa.framework */,
-				C0DC2BDA18955B8B00F5D6B4 /* XCTest.framework */,
 				C0DC2BBD18955B8A00F5D6B4 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -132,24 +122,6 @@
 				C0DC2BC718955B8B00F5D6B4 /* main.m */,
 				C0DC2BC918955B8B00F5D6B4 /* PushIt-Prefix.pch */,
 				C0DC2BCA18955B8B00F5D6B4 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C0DC2BDF18955B8B00F5D6B4 /* PushItTests */ = {
-			isa = PBXGroup;
-			children = (
-				C0DC2BE518955B8B00F5D6B4 /* PushItTests.m */,
-				C0DC2BE018955B8B00F5D6B4 /* Supporting Files */,
-			);
-			path = PushItTests;
-			sourceTree = "<group>";
-		};
-		C0DC2BE018955B8B00F5D6B4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C0DC2BE118955B8B00F5D6B4 /* PushItTests-Info.plist */,
-				C0DC2BE218955B8B00F5D6B4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,7 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DC2BE418955B8B00F5D6B4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DC2BE618955B8B00F5D6B4 /* PushItTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,14 +268,6 @@
 				C0DC2BD118955B8B00F5D6B4 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		C0DC2BE218955B8B00F5D6B4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0DC2BE318955B8B00F5D6B4 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -464,6 +426,7 @@
 				C0DC2BEB18955B8B00F5D6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0DC2BEC18955B8B00F5D6B4 /* Build configuration list for PBXNativeTarget "PushItTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +435,7 @@
 				C0DC2BEE18955B8B00F5D6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,9 +10,16 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+@synthesize urlComboBox;
+
+- (IBAction)addURL:(id)sender
 {
-    // Insert code here to initialize your application
+    [urlComboBox addItemWithObjectValue:urlComboBox.stringValue];}
+
+- (IBAction)openURL:(id)sender
+{
+    NSString *url = self.urlComboBox.stringValue;
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
 }
 
 @end
